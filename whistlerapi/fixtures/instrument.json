@@ -1,0 +1,298 @@
+[
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 1,
+        "fields": {
+            "family_id": "1",
+            "instrument": "violin"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 2,
+        "fields": {
+            "family_id": "1",
+            "instrument": "viola"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 3,
+        "fields": {
+            "family_id": "1",
+            "instrument": "cello"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 4,
+        "fields": {
+            "family_id": "1",
+            "instrument": "bass"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 5,
+        "fields": {
+            "family_id": "1",
+            "instrument": "bass"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 6,
+        "fields": {
+            "family_id": "1",
+            "instrument": "harp"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 7,
+        "fields": {
+            "family_id": "2",
+            "instrument": "trumpet"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 8,
+        "fields": {
+            "family_id": "2",
+            "instrument": "coronet"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 9,
+        "fields": {
+            "family_id": "2",
+            "instrument": "French horn"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 10,
+        "fields": {
+            "family_id": "2",
+            "instrument": "trombone"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 11,
+        "fields": {
+            "family_id": "2",
+            "instrument": "tuba"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 12,
+        "fields": {
+            "family_id": "3",
+            "instrument": "acoustic guitar"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 13,
+        "fields": {
+            "family_id": "3",
+            "instrument": "bass guitar"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 14,
+        "fields": {
+            "family_id": "3",
+            "instrument": "classical guitar"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 15,
+        "fields": {
+            "family_id": "3",
+            "instrument": "electric guitar"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 16,
+        "fields": {
+            "family_id": "3",
+            "instrument": "flat top guitar"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 17,
+        "fields": {
+            "family_id": "3",
+            "instrument": "steel guitar"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 18,
+        "fields": {
+            "family_id": "3",
+            "instrument": "banjo"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 19,
+        "fields": {
+            "family_id": "3",
+            "instrument": "mandolin"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 20,
+        "fields": {
+            "family_id": "3",
+            "instrument": "ukelele"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 21,
+        "fields": {
+            "family_id": "4",
+            "instrument": "piano"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 22,
+        "fields": {
+            "family_id": "4",
+            "instrument": "organ"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 23,
+        "fields": {
+            "family_id": "4",
+            "instrument": "synthesizer"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 24,
+        "fields": {
+            "family_id": "4",
+            "instrument": "celesta"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 25,
+        "fields": {
+            "family_id": "5",
+            "instrument": "synthesizer"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 26,
+        "fields": {
+            "family_id": "5",
+            "instrument": "drums (trap set)"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 27,
+        "fields": {
+            "family_id": "5",
+            "instrument": "timpani/kettle drums"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 28,
+        "fields": {
+            "family_id": "5",
+            "instrument": "chimes"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 29,
+        "fields": {
+            "family_id": "5",
+            "instrument": "bongo drums"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 30,
+        "fields": {
+            "family_id": "5",
+            "instrument": "xylophone"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 31,
+        "fields": {
+            "family_id": "6",
+            "instrument": "flute"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 32,
+        "fields": {
+            "family_id": "6",
+            "instrument": "piccolo"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 33,
+        "fields": {
+            "family_id": "6",
+            "instrument": "clarinet"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 34,
+        "fields": {
+            "family_id": "6",
+            "instrument": "oboe"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 35,
+        "fields": {
+            "family_id": "6",
+            "instrument": "basson"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 36,
+        "fields": {
+            "family_id": "6",
+            "instrument": "saxophone"
+        }
+    },
+    {
+        "model": "whistlerapi.instrument",
+        "pk": 37,
+        "fields": {
+            "family_id": "6",
+            "instrument": "trombone"
+        }
+    }
+]
