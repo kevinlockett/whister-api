@@ -1,0 +1,54 @@
+[
+    {
+        "model": "whistlerapi.shop",
+        "pk": 1,
+        "fields": {
+            "name": "Mr. Whistle's Riverfront Music Emporium",
+            "address": "3910 Wilkinson Street",
+            "city": "Nashville",
+            "state": 43,
+            "zipcode": "37201",
+            "phone": "(615)469-4194",
+            "is_active": "True"
+        }
+    },
+    {
+        "model": "whistlerapi.shop",
+        "pk": 2,
+        "fields": {
+            "name": "Mr. Whistle's Music Row Shop",
+            "address": "1989 Buffalo Creek Road",
+            "city": "Nashville",
+            "state": 43,
+            "zipcode": "37212",
+            "phone": "(615)936-9635",
+            "is_active": "True"
+        }
+    },
+    {
+        "model": "whistlerapi.shop",
+        "pk": 3,
+        "fields": {
+            "name": "Mr. Whistle's Downtown Music Emporium",
+            "address": "2064 Glory Road",
+            "city": "Nashville",
+            "state": 43,
+            "zipcode": "37201",
+            "phone": "(615)908-0772",
+            "is_active": "True"
+        }
+    },
+    {
+        "model": "whistlerapi.shop",
+        "pk": 4,
+        "fields": {
+            "name": "Mr. Whistle's Music Emporium Franklin",
+            "address": "1262 Hidden Pond Road",
+            "city": "Franklin",
+            "state": 43,
+            "zipcode": "37067",
+            "phone": "(615)778-7036",
+            "is_active": "True"
+        }
+    }
+]

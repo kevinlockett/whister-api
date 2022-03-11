@@ -1,0 +1,44 @@
+[
+    {
+        "model": "whistlerapi.servicetype",
+        "pk": 1,
+        "fields": {
+            "service": "Lesson"
+        }
+    },
+    {
+        "model": "whistlerapi.servicetype",
+        "pk": 2,
+        "fields": {
+            "service": "Repair"
+        }
+    },
+    {
+        "model": "whistlerapi.servicetype",
+        "pk": 3,
+        "fields": {
+            "service": "Tuning"
+        }
+    },
+    {
+        "model": "whistlerapi.servicetype",
+        "pk": 4,
+        "fields": {
+            "service": "Rental"
+        }
+    },
+    {
+        "model": "whistlerapi.servicetype",
+        "pk": 5,
+        "fields": {
+            "service": "Consignment"
+        }
+    },
+    {
+        "model": "whistlerapi.servicetype",
+        "pk": 6,
+        "fields": {
+            "service": "Retail"
+        }
+    }
+]

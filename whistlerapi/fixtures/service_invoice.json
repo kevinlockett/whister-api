@@ -1,0 +1,98 @@
+[
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 1,
+        "fields": {
+            "invoice_id": 1,
+            "service_id": 1
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 2,
+        "fields": {
+            "invoice_id": 2,
+            "service_id": 2
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 3,
+        "fields": {
+            "invoice_id": 3,
+            "service_id": 3
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 4,
+        "fields": {
+            "invoice_id": 4,
+            "service_id": 4
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 5,
+        "fields": {
+            "invoice_id": 5,
+            "service_id": 5
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 6,
+        "fields": {
+            "invoice_id": 6,
+            "service_id": 6
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 7,
+        "fields": {
+            "invoice_id": 7,
+            "service_id": 7
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 8,
+        "fields": {
+            "invoice_id": 8,
+            "service_id": 8
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 9,
+        "fields": {
+            "invoice_id": 9,
+            "service_id": 9
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 10,
+        "fields": {
+            "invoice_id": 10,
+            "service_id": 10
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 11,
+        "fields": {
+            "invoice_id": 11,
+            "service_id": 11
+        }
+    },
+    {
+        "model": "whistlerapi.serviceinvoice",
+        "pk": 12,
+        "fields": {
+            "invoice_id": 8,
+            "service_id": 12
+        }
+    }
+]

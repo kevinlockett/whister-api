@@ -1,0 +1,110 @@
+[
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 1,
+        "fields": {
+            "merchant_id": 1,
+            "customer_id": 1,
+            "acct_number": 1587962548325647
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 2,
+        "fields": {
+            "merchant_id": 2,
+            "customer_id": 1,
+            "acct_number": 9758564213598735
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 3,
+        "fields": {
+            "merchant_id": 3,
+            "customer_id": 2,
+            "acct_number": 4582697456325164
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 4,
+        "fields": {
+            "merchant_id": 4,
+            "customer_id": 2,
+            "acct_number": 4958632579523465
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 5,
+        "fields": {
+            "merchant_id": 1,
+            "customer_id": 3,
+            "acct_number": 5285459585475235
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 6,
+        "fields": {
+            "merchant_id": 2,
+            "customer_id": 4,
+            "acct_number": 7985642351548526
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 7,
+        "fields": {
+            "merchant_id": 3,
+            "customer_id": 5,
+            "acct_number": 7485963214565825
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 8,
+        "fields": {
+            "merchant_id": 4,
+            "customer_id": 6,
+            "acct_number": 5821659785412356
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 9,
+        "fields": {
+            "merchant_id": 1,
+            "customer_id": 7,
+            "acct_number": 7589658423652145
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 10,
+        "fields": {
+            "merchant_id": 2,
+            "customer_id": 8,
+            "acct_number": 4685479235145698
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 11,
+        "fields": {
+            "merchant_id": 3,
+            "customer_id": 9,
+            "acct_number": 8524695743521468
+        }
+    },
+    {
+        "model": "whistlerapi.paymenttype",
+        "pk": 12,
+        "fields": {
+            "merchant_id": 4,
+            "customer_id": 10,
+            "acct_number": 9632587412365478
+        }
+    }
+]

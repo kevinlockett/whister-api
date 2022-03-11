@@ -1,0 +1,157 @@
+[
+    {
+        "model": "whistlerapi.service",
+        "pk": 1,
+        "fields": {
+            "shop_id": 1,
+            "servicetype_id": 1,
+            "description": "60 minute in-studio violin lesson.",
+            "price": 60.00,
+            "instrument_id": 1,
+            "musicstyle": 1,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 2,
+        "fields": {
+            "shop_id": 2,
+            "servicetype_id": 1,
+            "description": "60 minute in-studio trumpet lesson.",
+            "price": 55.00,
+            "instrument_id": 7,
+            "musicstyle": 3,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 3,
+        "fields": {
+            "shop_id": 3,
+            "servicetype_id": 1,
+            "description": "60 minute in-studio trombone lesson.",
+            "price": 55.00,
+            "instrument_id": 10,
+            "musicstyle": 3,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 4,
+        "fields": {
+            "shop_id": 4,
+            "servicetype_id": 1,
+            "description": "60 minute in-studio acoustic guitar lesson.",
+            "price": 45.00,
+            "instrument_id": 12,
+            "musicstyle": 2,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 5,
+        "fields": {
+            "shop_id": 1,
+            "servicetype_id": 1,
+            "description": "30 minute in-studio bass guitar lesson.",
+            "price": 45.00,
+            "instrument_id": 13,
+            "musicstyle": 4,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 6,
+        "fields": {
+            "shop_id": 2,
+            "servicetype_id": 1,
+            "description": "30 minute in-studio classic guitar lesson.",
+            "price": 45.00,
+            "instrument_id": 14,
+            "musicstyle": 1,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 7,
+        "fields": {
+            "shop_id": 3,
+            "servicetype_id": 1,
+            "description": "60 minute in-studio banjo lesson.",
+            "price": 75.00,
+            "instrument_id": 18,
+            "musicstyle": 2,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 8,
+        "fields": {
+            "shop_id": 4,
+            "servicetype_id": 1,
+            "description": "Mandolin restring and tune.",
+            "price": 90.00,
+            "instrument_id": 19,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 9,
+        "fields": {
+            "shop_id": 1,
+            "servicetype_id": 1,
+            "description": "60 minute in-studio piano lesson.",
+            "price": 45.00,
+            "instrument_id": 2,
+            "musicstyle": 1,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 10,
+        "fields": {
+            "shop_id": 2,
+            "servicetype_id": 1,
+            "description": "60 minute in-studio piano lesson.",
+            "price": 45.00,
+            "instrument_id": 2,
+            "musicstyle": 2,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 11,
+        "fields": {
+            "shop_id": 3,
+            "servicetype_id": 1,
+            "description": "60 minute in-studio drum lesson.",
+            "price": 55.00,
+            "instrument_id": 26,
+            "musicstyle": 4,
+            "servicedate": "2022-03-11"
+        }
+    },
+    {
+        "model": "whistlerapi.service",
+        "pk": 12,
+        "fields": {
+            "shop_id": 4,
+            "servicetype_id": 1,
+            "description": "60 minute in-studio mandolin lesson.",
+            "price": 65.00,
+            "instrument_id": 19,
+            "musicstyle": 2,
+            "servicedate": "2022-03-11"
+        }
+    }
+]

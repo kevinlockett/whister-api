@@ -1,0 +1,30 @@
+[
+    {
+        "model": "whistlerapi.musicstyle",
+        "pk": 1,
+        "fields": {
+            "style": "classical"
+        }
+    },
+    {
+        "model": "whistlerapi.musicstyle",
+        "pk": 2,
+        "fields": {
+            "style": "country"
+        }
+    },
+    {
+        "model": "whistlerapi.musicstyle",
+        "pk": 3,
+        "fields": {
+            "style": "jazz"
+        }
+    },
+    {
+        "model": "whistlerapi.musicstyle",
+        "pk": 4,
+        "fields": {
+            "style": "rock"
+        }
+    }
+]

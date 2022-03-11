@@ -1,0 +1,30 @@
+[
+    {
+        "model": "whistlerapi.merchant",
+        "pk": 1,
+        "fields": {
+            "name": "American Express"
+        }
+    },
+    {
+        "model": "whistlerapi.merchant",
+        "pk": 2,
+        "fields": {
+            "name": "Discover"
+        }
+    },
+    {
+        "model": "whistlerapi.merchant",
+        "pk": 3,
+        "fields": {
+            "name": "MasterCard"
+        }
+    },
+    {
+        "model": "whistlerapi.merchant",
+        "pk": 4,
+        "fields": {
+            "name": "Visa"
+        }
+    }
+]

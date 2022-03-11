@@ -1,0 +1,410 @@
+[
+    {
+        "model": "whistlerapi.state",
+        "pk": 1,
+        "fields": {
+            "name": "Alabama",
+            "abbrev": "AL"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 2,
+        "fields": {
+            "name": "Alaska",
+            "abbrev": "AK"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 3,
+        "fields": {
+            "name": "Arizona",
+            "abbrev": "AZ"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 4,
+        "fields": {
+            "name": "Arkansas",
+            "abbrev": "AR"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 5,
+        "fields": {
+            "name": "California",
+            "abbrev": "CA"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 6,
+        "fields": {
+            "name": "Colorado",
+            "abbrev": "CO"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 7,
+        "fields": {
+            "name": "Connecticut",
+            "abbrev": "CT"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 8,
+        "fields": {
+            "name": "Delaware",
+            "abbrev": "DE"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 9,
+        "fields": {
+            "name": "District of Columbia",
+            "abbrev": "DC"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 10,
+        "fields": {
+            "name": "Florida",
+            "abbrev": "FL"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 11,
+        "fields": {
+            "name": "Georgia",
+            "abbrev": "GA"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 12,
+        "fields": {
+            "name": "Hawaii",
+            "abbrev": "HI"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 13,
+        "fields": {
+            "name": "Idaho",
+            "abbrev": "ID"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 14,
+        "fields": {
+            "name": "Illinois",
+            "abbrev": "IL"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 15,
+        "fields": {
+            "name": "Indiana",
+            "abbrev": "IN"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 16,
+        "fields": {
+            "name": "Iowa",
+            "abbrev": "IA"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 17,
+        "fields": {
+            "name": "Kansas",
+            "abbrev": "KS"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 18,
+        "fields": {
+            "name": "Kentucky",
+            "abbrev": "KY"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 19,
+        "fields": {
+            "name": "Louisiana",
+            "abbrev": "LA"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 20,
+        "fields": {
+            "name": "Maine",
+            "abbrev": "ME"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 21,
+        "fields": {
+            "name": "Maryland",
+            "abbrev": "MD"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 22,
+        "fields": {
+            "name": "Massachusetts",
+            "abbrev": "MA"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 23,
+        "fields": {
+            "name": "Michigan",
+            "abbrev": "MI"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 24,
+        "fields": {
+            "name": "Minnesota",
+            "abbrev": "MN"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 25,
+        "fields": {
+            "name": "Mississippi",
+            "abbrev": "MS"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 26,
+        "fields": {
+            "name": "Missouri",
+            "abbrev": "MO"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 27,
+        "fields": {
+            "name": "Montana",
+            "abbrev": "MT"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 28,
+        "fields": {
+            "name": "Nebraska",
+            "abbrev": "NE"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 29,
+        "fields": {
+            "name": "Nevada",
+            "abbrev": "NV"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 30,
+        "fields": {
+            "name": "New Hampshire",
+            "abbrev": "NH"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 31,
+        "fields": {
+            "name": "New Jersey",
+            "abbrev": "NJ"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 32,
+        "fields": {
+            "name": "New Mexico",
+            "abbrev": "NM"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 33,
+        "fields": {
+            "name": "New York",
+            "abbrev": "NY"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 34,
+        "fields": {
+            "name": "North Carolina",
+            "abbrev": "NC"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 35,
+        "fields": {
+            "name": "North Dakota",
+            "abbrev": "ND"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 36,
+        "fields": {
+            "name": "Ohio",
+            "abbrev": "OH"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 37,
+        "fields": {
+            "name": "Oklahoma",
+            "abbrev": "OK"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 38,
+        "fields": {
+            "name": "Oregon",
+            "abbrev": "OR"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 39,
+        "fields": {
+            "name": "Pennsylvania",
+            "abbrev": "PA"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 40,
+        "fields": {
+            "name": "Rhode Island",
+            "abbrev": "RI"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 41,
+        "fields": {
+            "name": "South Carolina",
+            "abbrev": "SC"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 42,
+        "fields": {
+            "name": "South Dakota",
+            "abbrev": "SD"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 43,
+        "fields": {
+            "name": "Tennessee",
+            "abbrev": "TN"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 44,
+        "fields": {
+            "name": "Texas",
+            "abbrev": "TX"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 45,
+        "fields": {
+            "name": "Utah",
+            "abbrev": "UT"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 46,
+        "fields": {
+            "name": "Vermont",
+            "abbrev": "VT"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 47,
+        "fields": {
+            "name": "Virginia",
+            "abbrev": "VA"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 48,
+        "fields": {
+            "name": "Washington",
+            "abbrev": "WA"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 49,
+        "fields": {
+            "name": "West Virginia",
+            "abbrev": "WV"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 50,
+        "fields": {
+            "name": "Wisconsin",
+            "abbrev": "WI"
+        }
+    },
+    {
+        "model": "whistlerapi.state",
+        "pk": 51,
+        "fields": {
+            "name": "Wyoming",
+            "abbrev": "WY"
+        }
+    }
+]
