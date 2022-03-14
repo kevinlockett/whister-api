@@ -16,3 +16,4 @@ class CreateAppUserSerializer(serializers.Serializer):
         fields = ('username', 'password', 'first_name', 'last_name', 'email', 'address',
                   'city', 'state_id', 'zipcode', 'phone', 'bio', 'image', 'role_id',
                   'shop_id')
+        depth = 1

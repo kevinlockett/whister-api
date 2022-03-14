@@ -26,7 +26,7 @@ class AppUser(models.Model):
     @property
     def full_name(self):
         """Full name of Application User
-        
+
         Returns:
             string: Gets the first and last name fo the associated user object
         """
@@ -35,7 +35,7 @@ class AppUser(models.Model):
     @property
     def email(self):
         """Application User email
-        
+
         Returns:
             string: Email of associated user object
         """
@@ -44,9 +44,8 @@ class AppUser(models.Model):
     @property
     def username(self):
         """Username of Application User
-        
+
         Returns:
             string: username of associated user object
         """
         return self.authuser.username
-
