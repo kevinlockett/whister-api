@@ -19,4 +19,34 @@ class AppUser(models.Model):
     state = models.ForeignKey(
         'State', related_name="state", on_delete=models.CASCADE)
     zipcode = models.CharField(max_length=9)
-    
+
+    def __str__(self):
+        return self.full_name
+
+    @property
+    def full_name(self):
+        """Full name of Application User
+        
+        Returns:
+            string: Gets the first and last name fo the associated user object
+        """
+        return f"{self.authuser.first_name} {self.authuser.last_name}"
+
+    @property
+    def email(self):
+        """Application User email
+        
+        Returns:
+            string: Email of associated user object
+        """
+        return self.authuser.email
+
+    @property
+    def username(self):
+        """Username of Application User
+        
+        Returns:
+            string: username of associated user object
+        """
+        return self.authuser.username
+

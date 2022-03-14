@@ -19,7 +19,7 @@ from rest_framework.routers import DefaultRouter
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from whistlerapi.views import register_user, login_user
+from whistlerapi.views import register_user, login_user, AppUserView
 
 SchemaView = get_schema_view(
     openapi.Info(
@@ -32,6 +32,7 @@ SchemaView = get_schema_view(
 )
 
 router = DefaultRouter(trailing_slash=False)
+router.register(r'appusers', AppUserView, 'app_user')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
