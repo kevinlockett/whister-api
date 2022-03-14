@@ -3,3 +3,4 @@ from .app_user_view import AppUserView
 from .instrument_view import InstrumentView
 from .instrument_family_view import InstrumentFamilyView
 from .music_style_view import MusicStyleView
+from .shop_view import ShopView

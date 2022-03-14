@@ -19,7 +19,7 @@ from rest_framework.routers import DefaultRouter
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from whistlerapi.views import register_user, login_user, AppUserView, InstrumentView, InstrumentFamilyView, MusicStyleView
+from whistlerapi.views import register_user, login_user, AppUserView, InstrumentView, InstrumentFamilyView, MusicStyleView, ShopView
 
 SchemaView = get_schema_view(
     openapi.Info(
@@ -36,6 +36,7 @@ router.register(r'appusers', AppUserView, 'app_user')
 router.register(r'instruments', InstrumentView, 'instrument')
 router.register(r'instrumentfamilies', InstrumentFamilyView, 'instrument_family')
 router.register(r'musicstyles', MusicStyleView, 'music_style')
+router.register(r'shops', ShopView, 'shop')
 
 
 

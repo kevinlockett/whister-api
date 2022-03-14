@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
-from whistlerapi.models import Instrument, instrument
+from whistlerapi.models import Instrument
 from whistlerapi.serializers import InstrumentSerializer, MessageSerializer
 
 class InstrumentView(ViewSet):
@@ -15,7 +15,7 @@ class InstrumentView(ViewSet):
         )
     })
     def list(self, request):
-        """Get a list of Instrument Styles
+        """Get a list of Instruments
         """
         instruments = Instrument.objects.all()
         serializer = InstrumentSerializer(instruments, many=True)
