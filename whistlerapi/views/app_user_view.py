@@ -83,4 +83,22 @@ class AppUserView(ViewSet):
             return Response({'message': ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
         except AppUser.DoesNotExist as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
-        
+
+    @swagger_auto_schema(
+        responses={
+            204: openapi.Response(
+                description="No Content",
+            ),
+            404: openapi.Response(
+                description="The Application User was not found",
+                schema=MessageSerializer()
+            )
+        })
+    def destroy(self, request, pk):
+        """Delete an Application User"""
+        try:
+            appuser = AppUser.objects.get(pk=pk)
+            appuser.authuser.delete()
+            return Response(None, status=status.HTTP_204_NO_CONTENT)
+        except AppUser.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
