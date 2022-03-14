@@ -45,6 +45,21 @@ INSTALLED_APPS = [
     'whistlerapi'
 ]
 
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'Token': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header',
+            'description': """Grab a token from the authtoken table.
+            Use this format in the input field: **Token &lt;token>**"""
+        }
+    },
+    'DEFAULT_MODEL_RENDERING': 'example',
+    'USE_SESSION_AUTH': False,
+    'DEFAULT_MODEL_DEPTH':-1
+}
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',

@@ -9,7 +9,7 @@ from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 
 from whistlerapi.models import AppUser
-from whistlerapi.serializers import CreateUserSerializer
+from whistlerapi.serializers import CreateAppUserSerializer
 
 
 @api_view(['POST'])
@@ -40,7 +40,7 @@ def login_user(request):
         data = { 'valid': False }
         return Response(data)
 
-@swagger_auto_schema(method='POST', request_body=CreateUserSerializer, responses={
+@swagger_auto_schema(method='POST', request_body=CreateAppUserSerializer, responses={
     200: openapi.Response(
         description="Returns the newly created token",
         schema=AuthTokenSerializer()
