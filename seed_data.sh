@@ -2,16 +2,16 @@ rm db.sqlite3
 ./manage.py makemigrations whistlerapi
 ./manage.py migrate
 echo "MIGRATION COMPLETE"
-./manage.py loaddata instrument_class
-echo "LOAD INSTRUMENT_CLASS DATA COMPLETE"
+./manage.py loaddata instrument_family
+echo "LOAD INSTRUMENT_FAMILY DATA COMPLETE"
 ./manage.py loaddata instrument
 echo "LOAD INSTRUMENT DATA COMPLETE"
 ./manage.py loaddata merchant
 echo "LOAD MERCHANT DATA COMPLETE"
 ./manage.py loaddata music_style
 echo "LOAD MUSIC_STYLE DATA COMPLETE"
-./manage.py loaddata position
-echo "LOAD POSITION DATA COMPLETE"
+./manage.py loaddata role
+echo "LOAD ROLE DATA COMPLETE"
 ./manage.py loaddata service_type
 echo "LOAD SERVICE_TYPE DATA COMPLETE"
 ./manage.py loaddata state

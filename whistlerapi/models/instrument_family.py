@@ -1,6 +1,6 @@
 from django.db import models
 
-class InstrumentClass(models.Model):
+class InstrumentFamily(models.Model):
     family = models.CharField(max_length=10)
 
     class Meta:
@@ -8,3 +8,4 @@ class InstrumentClass(models.Model):
 
     def __str__(self):
         return f'Family: {self.family}'
+    

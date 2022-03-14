@@ -4,6 +4,25 @@
         "--django-settings-module=whistler.settings",
         ],
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "whistler",
+            "database": "db.sqlite3"
+        }
+    ],
+    "cSpell.words": [
+        "instrumentfamily",
+        "musicstyle",
+        "numerify",
+        "paymenttype",
+        "serviceinvoice",
+        "servicetype",
+        "whistlerapi",
+        "yasg",
+        "zipcode"
+    ]
 }
 

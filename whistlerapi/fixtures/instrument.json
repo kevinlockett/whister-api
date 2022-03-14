@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "family_id": "1",
-            "instrument": "violin"
+            "name": "violin"
         }
     },
     {
@@ -12,7 +12,7 @@
         "pk": 2,
         "fields": {
             "family_id": "1",
-            "instrument": "viola"
+            "name": "viola"
         }
     },
     {
@@ -20,7 +20,7 @@
         "pk": 3,
         "fields": {
             "family_id": "1",
-            "instrument": "cello"
+            "name": "cello"
         }
     },
     {
@@ -28,7 +28,7 @@
         "pk": 4,
         "fields": {
             "family_id": "1",
-            "instrument": "bass"
+            "name": "bass"
         }
     },
     {
@@ -36,7 +36,7 @@
         "pk": 5,
         "fields": {
             "family_id": "1",
-            "instrument": "bass"
+            "name": "bass"
         }
     },
     {
@@ -44,7 +44,7 @@
         "pk": 6,
         "fields": {
             "family_id": "1",
-            "instrument": "harp"
+            "name": "harp"
         }
     },
     {
@@ -52,7 +52,7 @@
         "pk": 7,
         "fields": {
             "family_id": "2",
-            "instrument": "trumpet"
+            "name": "trumpet"
         }
     },
     {
@@ -60,7 +60,7 @@
         "pk": 8,
         "fields": {
             "family_id": "2",
-            "instrument": "coronet"
+            "name": "coronet"
         }
     },
     {
@@ -68,7 +68,7 @@
         "pk": 9,
         "fields": {
             "family_id": "2",
-            "instrument": "French horn"
+            "name": "French horn"
         }
     },
     {
@@ -76,7 +76,7 @@
         "pk": 10,
         "fields": {
             "family_id": "2",
-            "instrument": "trombone"
+            "name": "trombone"
         }
     },
     {
@@ -84,7 +84,7 @@
         "pk": 11,
         "fields": {
             "family_id": "2",
-            "instrument": "tuba"
+            "name": "tuba"
         }
     },
     {
@@ -92,7 +92,7 @@
         "pk": 12,
         "fields": {
             "family_id": "3",
-            "instrument": "acoustic guitar"
+            "name": "acoustic guitar"
         }
     },
     {
@@ -100,7 +100,7 @@
         "pk": 13,
         "fields": {
             "family_id": "3",
-            "instrument": "bass guitar"
+            "name": "bass guitar"
         }
     },
     {
@@ -108,7 +108,7 @@
         "pk": 14,
         "fields": {
             "family_id": "3",
-            "instrument": "classical guitar"
+            "name": "classical guitar"
         }
     },
     {
@@ -116,7 +116,7 @@
         "pk": 15,
         "fields": {
             "family_id": "3",
-            "instrument": "electric guitar"
+            "name": "electric guitar"
         }
     },
     {
@@ -124,7 +124,7 @@
         "pk": 16,
         "fields": {
             "family_id": "3",
-            "instrument": "flat top guitar"
+            "name": "flat top guitar"
         }
     },
     {
@@ -132,7 +132,7 @@
         "pk": 17,
         "fields": {
             "family_id": "3",
-            "instrument": "steel guitar"
+            "name": "steel guitar"
         }
     },
     {
@@ -140,7 +140,7 @@
         "pk": 18,
         "fields": {
             "family_id": "3",
-            "instrument": "banjo"
+            "name": "banjo"
         }
     },
     {
@@ -148,7 +148,7 @@
         "pk": 19,
         "fields": {
             "family_id": "3",
-            "instrument": "mandolin"
+            "name": "mandolin"
         }
     },
     {
@@ -156,7 +156,7 @@
         "pk": 20,
         "fields": {
             "family_id": "3",
-            "instrument": "ukelele"
+            "name": "ukelele"
         }
     },
     {
@@ -164,7 +164,7 @@
         "pk": 21,
         "fields": {
             "family_id": "4",
-            "instrument": "piano"
+            "name": "piano"
         }
     },
     {
@@ -172,7 +172,7 @@
         "pk": 22,
         "fields": {
             "family_id": "4",
-            "instrument": "organ"
+            "name": "organ"
         }
     },
     {
@@ -180,7 +180,7 @@
         "pk": 23,
         "fields": {
             "family_id": "4",
-            "instrument": "synthesizer"
+            "name": "synthesizer"
         }
     },
     {
@@ -188,7 +188,7 @@
         "pk": 24,
         "fields": {
             "family_id": "4",
-            "instrument": "celesta"
+            "name": "celesta"
         }
     },
     {
@@ -196,7 +196,7 @@
         "pk": 25,
         "fields": {
             "family_id": "5",
-            "instrument": "synthesizer"
+            "name": "synthesizer"
         }
     },
     {
@@ -204,7 +204,7 @@
         "pk": 26,
         "fields": {
             "family_id": "5",
-            "instrument": "drums (trap set)"
+            "name": "drums (trap set)"
         }
     },
     {
@@ -212,7 +212,7 @@
         "pk": 27,
         "fields": {
             "family_id": "5",
-            "instrument": "timpani/kettle drums"
+            "name": "timpani/kettle drums"
         }
     },
     {
@@ -220,7 +220,7 @@
         "pk": 28,
         "fields": {
             "family_id": "5",
-            "instrument": "chimes"
+            "name": "chimes"
         }
     },
     {
@@ -228,7 +228,7 @@
         "pk": 29,
         "fields": {
             "family_id": "5",
-            "instrument": "bongo drums"
+            "name": "bongo drums"
         }
     },
     {
@@ -236,7 +236,7 @@
         "pk": 30,
         "fields": {
             "family_id": "5",
-            "instrument": "xylophone"
+            "name": "xylophone"
         }
     },
     {
@@ -244,7 +244,7 @@
         "pk": 31,
         "fields": {
             "family_id": "6",
-            "instrument": "flute"
+            "name": "flute"
         }
     },
     {
@@ -252,7 +252,7 @@
         "pk": 32,
         "fields": {
             "family_id": "6",
-            "instrument": "piccolo"
+            "name": "piccolo"
         }
     },
     {
@@ -260,7 +260,7 @@
         "pk": 33,
         "fields": {
             "family_id": "6",
-            "instrument": "clarinet"
+            "name": "clarinet"
         }
     },
     {
@@ -268,7 +268,7 @@
         "pk": 34,
         "fields": {
             "family_id": "6",
-            "instrument": "oboe"
+            "name": "oboe"
         }
     },
     {
@@ -276,7 +276,7 @@
         "pk": 35,
         "fields": {
             "family_id": "6",
-            "instrument": "basson"
+            "name": "bassoon"
         }
     },
     {
@@ -284,7 +284,7 @@
         "pk": 36,
         "fields": {
             "family_id": "6",
-            "instrument": "saxophone"
+            "name": "saxophone"
         }
     },
     {
@@ -292,7 +292,7 @@
         "pk": 37,
         "fields": {
             "family_id": "6",
-            "instrument": "trombone"
+            "name": "trombone"
         }
     }
 ]
