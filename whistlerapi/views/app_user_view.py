@@ -98,7 +98,8 @@ class AppUserView(ViewSet):
         """Delete an Application User"""
         try:
             appuser = AppUser.objects.get(pk=pk)
-            appuser.authuser.delete()
+            appuser.delete()
             return Response(None, status=status.HTTP_204_NO_CONTENT)
         except AppUser.DoesNotExist as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+        
