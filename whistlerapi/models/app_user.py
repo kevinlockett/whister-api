@@ -12,12 +12,11 @@ class AppUser(models.Model):
         height_field=None, width_field=None,
         max_length=None, null=True, blank=True)
     phone = models.CharField(max_length=16)
-    position = models.ForeignKey(
-        'Position', on_delete=models.CASCADE)
+    role = models.ForeignKey(
+        'Role', related_name="role", on_delete=models.CASCADE)
     shop = models.ForeignKey(
-        'Shop', on_delete=models.CASCADE)
+        'Shop', related_name="shop", on_delete=models.CASCADE)
     state = models.ForeignKey(
-        'State', on_delete=models.CASCADE)
+        'State', related_name="state", on_delete=models.CASCADE)
     zipcode = models.CharField(max_length=9)
-    
     

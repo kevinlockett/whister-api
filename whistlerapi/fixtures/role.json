@@ -1,0 +1,37 @@
+[
+    {
+        "model": "whistlerapi.role",
+        "pk": 1,
+        "fields": {
+            "name": "customer"
+        }
+    },
+    {
+        "model": "whistlerapi.role",
+        "pk": 2,
+        "fields": {
+            "name": "instructor"
+        }
+    },
+    {
+        "model": "whistlerapi.role",
+        "pk": 3,
+        "fields": {
+            "name": "owner"
+        }
+    },
+    {
+        "model": "whistlerapi.role",
+        "pk": 4,
+        "fields": {
+            "name": "staff"
+        }
+    },
+    {
+        "model": "whistlerapi.role",
+        "pk": 5,
+        "fields": {
+            "name": "student"
+        }
+    }
+]

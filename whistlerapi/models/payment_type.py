@@ -9,7 +9,6 @@ class PaymentType(models.Model):
     merchant = models.ForeignKey(
         'Merchant', on_delete=models.CASCADE, related_name='payment_types'
     )
-    
     @property
     def obscured_num(self):
         """
@@ -18,3 +17,4 @@ class PaymentType(models.Model):
             string: e.g. ************1234
         """
         return '*'*(len(self.acct_number) -4)+self.acct_number[-4:]
+    

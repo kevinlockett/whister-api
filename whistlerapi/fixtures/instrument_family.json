@@ -1,41 +1,41 @@
 [
     {
-        "model": "whistlerapi.instrumentclass",
+        "model": "whistlerapi.instrumentfamily",
         "pk": 1,
         "fields": {
             "family": "Bowed Strings"
         }
     },
     {
-        "model": "whistlerapi.instrumentclass",
+        "model": "whistlerapi.instrumentfamily",
         "pk": 2,
         "fields": {
             "family": "Brass"
         }
     },
     {
-        "model": "whistlerapi.instrumentclass",
+        "model": "whistlerapi.instrumentfamily",
         "pk": 3,
         "fields": {
             "family": "Guitar family"
         }
     },
     {
-        "model": "whistlerapi.instrumentclass",
+        "model": "whistlerapi.instrumentfamily",
         "pk": 4,
         "fields": {
             "family": "Keyboard"
         }
     },
     {
-        "model": "whistlerapi.instrumentclass",
+        "model": "whistlerapi.instrumentfamily",
         "pk": 5,
         "fields": {
             "family": "Percussion"
         }
     },
     {
-        "model": "whistlerapi.instrumentclass",
+        "model": "whistlerapi.instrumentfamily",
         "pk": 6,
         "fields": {
             "family": "Woodwind"
