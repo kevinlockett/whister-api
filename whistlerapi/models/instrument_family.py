@@ -7,5 +7,5 @@ class InstrumentFamily(models.Model):
         verbose_name_plural = 'InstrumentFamilies'
 
     def __str__(self):
-        return f'Family: {self.family}'
+        return f'InstrumentFamily: {self.family}'
     
