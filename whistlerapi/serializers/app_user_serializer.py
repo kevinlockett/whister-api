@@ -10,10 +10,17 @@ class AppUserSerializer(serializers.ModelSerializer):
         depth = 1
 
 class CreateAppUserSerializer(serializers.Serializer):
-
-    class Meta:
-        model = AppUser
-        fields = ('username', 'password', 'first_name', 'last_name', 'email', 'address',
-                  'city', 'state_id', 'zipcode', 'phone', 'bio', 'image', 'role_id',
-                  'shop_id')
-        depth = 1
+    username = serializers.CharField()
+    password = serializers.CharField()
+    first_name = serializers.CharField()
+    last_name = serializers.CharField()
+    email = serializers.CharField()
+    address = serializers.CharField()
+    city = serializers.CharField()
+    state_id = serializers.IntegerField()
+    zipcode = serializers.CharField()
+    phone = serializers.CharField()
+    bio = serializers.CharField()
+    image = serializers.CharField()
+    role_id = serializers.IntegerField()
+    shop_id = serializers.IntegerField()
