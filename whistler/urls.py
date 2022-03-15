@@ -19,7 +19,7 @@ from rest_framework.routers import DefaultRouter
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
-from whistlerapi.views import register_user, login_user, AppUserView, InstrumentView, InstrumentFamilyView, MusicStyleView, ServiceView, ShopView
+from whistlerapi import views
 
 SchemaView = get_schema_view(
     openapi.Info(
@@ -32,19 +32,18 @@ SchemaView = get_schema_view(
 )
 
 router = DefaultRouter(trailing_slash=False)
-router.register(r'appusers', AppUserView, 'app_user')
-router.register(r'instruments', InstrumentView, 'instrument')
-router.register(r'instrumentfamilies', InstrumentFamilyView, 'instrument_family')
-router.register(r'musicstyles', MusicStyleView, 'music_style')
-router.register(r'services', ServiceView, 'service')
-router.register(r'shops', ShopView, 'shop')
-
-
+router.register(r'appusers', views.AppUserView, 'app_user')
+router.register(r'instruments', views.InstrumentView, 'instrument')
+router.register(r'instrumentfamilies', views.InstrumentFamilyView, 'instrument_family')
+router.register(r'musicstyles', views.MusicStyleView, 'music_style')
+router.register(r'paymenttypes', views.PaymentTypeView, 'payment_type')
+router.register(r'services', views.ServiceView, 'service')
+router.register(r'shops', views.ShopView, 'shop')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login', login_user),
-    path('register', register_user),
+    path('login', views.login_user),
+    path('register',views.register_user),
     path('', include(router.urls)),
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$',
