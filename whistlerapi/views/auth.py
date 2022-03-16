@@ -40,12 +40,16 @@ def login_user(request):
         data = { 'valid': False }
         return Response(data)
 
-@swagger_auto_schema(method='POST', request_body=CreateAppUserSerializer, responses={
-    200: openapi.Response(
-        description="Returns the newly created token",
-        schema=AuthTokenSerializer()
-    )
-})
+@swagger_auto_schema(
+    method='POST',
+    request_body=CreateAppUserSerializer,
+    responses={
+        200: openapi.Response(
+            description="Returns the newly created token",
+            schema=AuthTokenSerializer()
+        ),
+    }
+)
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def register_user(request):

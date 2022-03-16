@@ -20,7 +20,7 @@ class PaymentTypeView(ViewSet):
             400: openapi.Response(
                 description="Validation Error",
                 schema=MessageSerializer()
-            )
+            ),
         }
     )
     def create(self, request):
@@ -36,12 +36,14 @@ class PaymentTypeView(ViewSet):
         except ValidationError as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_400_BAD_REQUEST)
 
-    @swagger_auto_schema(responses={
-        200: openapi.Response(
-            description="The list of payment types for the current user",
-            schema=PaymentTypeSerializer(many=True)
-        )
-    })
+    @swagger_auto_schema(
+        responses={
+            200: openapi.Response(
+                description="The list of payment types for the current user",
+                schema=PaymentTypeSerializer(many=True)
+            ),
+        }
+    )
     def list(self, request):
         """Get a list of payment types for the current user"""
         user=request.auth.user
@@ -83,7 +85,7 @@ class PaymentTypeView(ViewSet):
             404: openapi.Response(
                 description="The Payment Type was not found",
                 schema=MessageSerializer()
-            )
+            ),
         }
     )
     def update(self, request, pk):

@@ -5,7 +5,7 @@ class AppUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ('username', 'full_name', 'address', 'city', 'state',
+        fields = ('id', 'username', 'full_name', 'address', 'city', 'state',
                   'zipcode', 'phone', 'bio', 'image', 'role', 'shop')
         depth = 1
 

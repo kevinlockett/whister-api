@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import User
 
 class Invoice(models.Model):
     customer = models.ForeignKey(
@@ -13,8 +12,9 @@ class Invoice(models.Model):
 
     @property
     def total(self):
+        '''Add prices for all services rendered and return total due'''
         return sum([p.price for p in self.services.all()], 0)
 
     def __str__(self):
         is_open = 'Completed' if self.completed_on else 'Open'
-        return f'{is_open} order for {self.customer.get_full_name()}'
+        return f'{is_open} order for {self.AppUser_id.full_name}'
