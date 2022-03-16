@@ -8,12 +8,14 @@ from whistlerapi.serializers import MusicStyleSerializer, MessageSerializer
 
 class MusicStyleView(ViewSet):
 
-    @swagger_auto_schema(responses={
-        200: openapi.Response(
-            description="The list of Music Styles",
-            schema=MusicStyleSerializer(many=True)
-        )
-    })
+    @swagger_auto_schema(
+        responses={
+            200: openapi.Response(
+                description="The list of Music Styles",
+                schema=MusicStyleSerializer(many=True)
+            ),
+        }
+    )
     def list(self, request):
         """Get a list of Music Styles
         """

@@ -9,12 +9,14 @@ from whistlerapi.serializers import AppUserSerializer, MessageSerializer, Create
 
 class AppUserView(ViewSet):
 
-    @swagger_auto_schema(responses={
-        200: openapi.Response(
-            description="The list of AppUsers",
-            schema=AppUserSerializer(many=True)
-        )
-    })
+    @swagger_auto_schema(
+        responses={
+            200: openapi.Response(
+                description="The list of AppUsers",
+                schema=AppUserSerializer(many=True)
+            ),
+        }
+    )
     def list(self, request):
         """Get a list of Application Users
         """
@@ -56,7 +58,7 @@ class AppUserView(ViewSet):
             404: openapi.Response(
                 description="The product was not found",
                 schema=MessageSerializer()
-            )
+            ),
         }
     )
     def update(self, request, pk):
@@ -92,7 +94,7 @@ class AppUserView(ViewSet):
             404: openapi.Response(
                 description="The Application User was not found",
                 schema=MessageSerializer()
-            )
+            ),
         })
     def destroy(self, request, pk):
         """Delete an Application User"""

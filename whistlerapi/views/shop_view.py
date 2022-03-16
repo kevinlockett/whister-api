@@ -8,12 +8,14 @@ from whistlerapi.serializers import ShopSerializer, MessageSerializer
 
 class ShopView(ViewSet):
 
-    @swagger_auto_schema(responses={
-        200: openapi.Response(
-            description="The list of Shops",
-            schema=ShopSerializer(many=True)
-        )
-    })
+    @swagger_auto_schema(
+        responses={
+            200: openapi.Response(
+                description="The list of Shops",
+                schema=ShopSerializer(many=True)
+            ),
+        }
+    )
     def list(self, request):
         """Get a list of Shop Styles
         """

@@ -8,12 +8,14 @@ from whistlerapi.serializers import InstrumentSerializer, MessageSerializer
 
 class InstrumentView(ViewSet):
 
-    @swagger_auto_schema(responses={
-        200: openapi.Response(
-            description="The list of Instruments",
-            schema=InstrumentSerializer(many=True)
-        )
-    })
+    @swagger_auto_schema(
+        responses={
+            200: openapi.Response(
+                description="The list of Instruments",
+                schema=InstrumentSerializer(many=True)
+            ),
+        }
+    )
     def list(self, request):
         """Get a list of Instruments
         """

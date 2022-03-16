@@ -5,7 +5,8 @@
         "fields": {
             "payment_type_id": 1,
             "customer": 1,
-            "service_date": "2022-01-25"
+            "service_date": "2022-01-25",
+            "completed_on": "2022-03-14"
         }
     },
     {
