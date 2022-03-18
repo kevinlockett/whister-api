@@ -5,5 +5,7 @@ from .invoice_serializer import InvoiceSerializer, PayInvoiceSerializer
 from .message_serializer import MessageSerializer
 from .music_style_serializer import MusicStyleSerializer
 from .payment_type_serializer import CreatePaymentTypeSerializer, PaymentTypeSerializer
+from .role_serializer import RoleSerializer
 from .service_serializer import CreateServiceSerializer, ServiceSerializer
 from .shop_serializer import ShopSerializer
+from .state_serializer import StateSerializer

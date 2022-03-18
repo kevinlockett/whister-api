@@ -3,7 +3,7 @@
         "model": "whistlerapi.role",
         "pk": 1,
         "fields": {
-            "name": "customer"
+            "name": "student"
         }
     },
     {
@@ -17,21 +17,7 @@
         "model": "whistlerapi.role",
         "pk": 3,
         "fields": {
-            "name": "owner"
-        }
-    },
-    {
-        "model": "whistlerapi.role",
-        "pk": 4,
-        "fields": {
             "name": "staff"
-        }
-    },
-    {
-        "model": "whistlerapi.role",
-        "pk": 5,
-        "fields": {
-            "name": "student"
         }
     }
 ]
