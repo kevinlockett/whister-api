@@ -49,6 +49,6 @@ class Command(BaseCommand):
                 city="Nashville",
                 state_id=43,
                 zipcode="37143",
-                phone=self.faker.numerify('(###)###-####'),
+                phone=self.faker.numerify('(###) ###-####'),
                 shop_id=random.randint(1,4)
             )

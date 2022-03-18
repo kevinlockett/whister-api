@@ -20,6 +20,7 @@ from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from whistlerapi import views
+from whistlerapi.views.app_user_view import AppUserView
 
 SchemaView = get_schema_view(
     openapi.Info(
@@ -37,9 +38,11 @@ router.register(r'instruments', views.InstrumentView, 'instrument')
 router.register(r'instrumentfamilies', views.InstrumentFamilyView, 'instrument_family')
 router.register(r'invoices', views.InvoiceView, 'invoice')
 router.register(r'musicstyles', views.MusicStyleView, 'music_style')
+router.register(r'roles', views.RoleView, 'role')
 router.register(r'paymenttypes', views.PaymentTypeView, 'payment_type')
 router.register(r'services', views.ServiceView, 'service')
 router.register(r'shops', views.ShopView, 'shop')
+router.register(r'states', views.StateView, 'state')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

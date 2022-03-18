@@ -75,6 +75,8 @@ CORS_ORIGIN_WHITELIST = (
 )
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
@@ -153,7 +155,7 @@ USE_TZ = False
 
 STATIC_URL = 'static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "raterproject", "media")
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

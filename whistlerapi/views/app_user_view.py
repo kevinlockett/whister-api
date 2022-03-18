@@ -1,13 +1,18 @@
 from rest_framework.viewsets import ViewSet
+from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.response import Response
 from rest_framework.exceptions import ValidationError
 from rest_framework import status
+from django.core.files.base import ContentFile
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from whistlerapi.models import AppUser
 from whistlerapi.serializers import AppUserSerializer, MessageSerializer, CreateAppUserSerializer
+import uuid
+import base64
 
 class AppUserView(ViewSet):
+    parser_classes = (MultiPartParser, FormParser)
 
     @swagger_auto_schema(
         responses={
@@ -15,12 +20,34 @@ class AppUserView(ViewSet):
                 description="The list of AppUsers",
                 schema=AppUserSerializer(many=True)
             ),
-        }
+        },
+        manual_parameters=[
+            openapi.Parameter(
+                'role',
+                openapi.IN_QUERY,
+                required=False,
+                type=openapi.TYPE_INTEGER,
+                description="Get users by category"
+            ),
+            openapi.Parameter(
+                'id',
+                openapi.IN_QUERY,
+                required=False,
+                type=openapi.TYPE_INTEGER,
+                description="Get users by id"
+            ),
+        ]
     )
     def list(self, request):
         """Get a list of Application Users
         """
         appusers = AppUser.objects.all()
+
+        role = request.query_params.get('role', None)
+
+        if role is not None:
+            appusers = appusers.filter(role_id=role)
+
         serializer = AppUserSerializer(appusers, many=True)
         return Response(serializer.data)
 
@@ -64,6 +91,10 @@ class AppUserView(ViewSet):
     def update(self, request, pk):
         """Update an Application User"""
         appuser = AppUser.objects.get(pk=pk)
+        
+        format, imgstr = request.data["image"].split(';base64,')
+        ext = format.split('/')[-1]
+        data = ContentFile(base64.b64decode(imgstr), name=f'{appuser.id}-{uuid.uuid4()}.{ext}')
 
         try:
             appuser.authuser.username = request.data['username']
@@ -75,7 +106,7 @@ class AppUserView(ViewSet):
             appuser.zipcode = request.data['zipcode']
             appuser.phone = request.data['phone']
             appuser.bio = request.data['bio']
-            appuser.image = request.data['image']
+            appuser.image = data
             appuser.role_id = request.data['role_id']
             appuser.shop_id = request.data['shop_id']
             appuser.save()
