@@ -5,9 +5,10 @@ class AppUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = AppUser
-        fields = ('id', 'username', 'full_name', 'first_name', 'last_name', 
-                  'address', 'city', 'state', 'state_id', 'role_id', 'shop_id',
-                  'zipcode', 'phone', 'email', 'bio', 'image', 'role', 'shop')
+        fields = ('id', 'username', 'full_name', 'first_name', 'last_name',
+                  'address', 'city', 'state_id', 'state', 'zipcode', 'phone',
+                  'email', 'bio', 'image', 'role_id', 'role', 'shop_id',
+                  'shop', 'music_style_id', 'skill_level_id')
         depth = 1
 
 class CreateAppUserSerializer(serializers.Serializer):
@@ -25,3 +26,5 @@ class CreateAppUserSerializer(serializers.Serializer):
     image = serializers.CharField()
     role_id = serializers.IntegerField()
     shop_id = serializers.IntegerField()
+    music_style_id = serializers.IntegerField()
+    skill_level_id = serializers.IntegerField()

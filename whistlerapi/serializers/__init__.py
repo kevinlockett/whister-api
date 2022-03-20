@@ -8,4 +8,5 @@ from .payment_type_serializer import CreatePaymentTypeSerializer, PaymentTypeSer
 from .role_serializer import RoleSerializer
 from .service_serializer import CreateServiceSerializer, ServiceSerializer
 from .shop_serializer import ShopSerializer
+from .skill_level_serializer import SkillLevelSerializer
 from .state_serializer import StateSerializer

@@ -5,7 +5,7 @@
         "fields": {
             "payment_type_id": 1,
             "customer": 1,
-            "service_date": "2022-01-25",
+            "created_on": "2022-01-25",
             "completed_on": "2022-03-14"
         }
     },
@@ -14,7 +14,7 @@
         "pk": 2,
         "fields": {
             "customer": 1,
-            "service_date": "2022-01-25"
+            "created_on": "2022-01-25"
         }
     },
     {
@@ -22,7 +22,7 @@
         "pk": 3,
         "fields": {
             "customer": 2,
-            "service_date": "2022-01-25"
+            "created_on": "2022-01-25"
         }
     },
     {
@@ -31,7 +31,7 @@
         "fields": {
             "payment_type_id": 4,
             "customer": 2,
-            "service_date": "2022-01-25",
+            "created_on": "2022-01-25",
             "completed_on": "2022-03-14"
         }
     },
@@ -40,7 +40,7 @@
         "pk": 5,
         "fields": {
             "customer": 3,
-            "service_date": "2022-01-25"
+            "created_on": "2022-01-25"
         }
     },
     {
@@ -49,7 +49,7 @@
         "fields": {
             "payment_type_id": 6,
             "customer": 4,
-            "service_date": "2022-01-25",
+            "created_on": "2022-01-25",
             "completed_on": "2022-03-26"
         }
     },
@@ -58,7 +58,7 @@
         "pk": 7,
         "fields": {
             "customer": 5,
-            "service_date": "2022-01-25"
+            "created_on": "2022-01-25"
         }
     },
     {
@@ -66,7 +66,7 @@
         "pk": 8,
         "fields": {
             "customer": 6,
-            "service_date": "2022-01-25"
+            "created_on": "2022-01-25"
         }
     },
     {
@@ -75,7 +75,7 @@
         "fields": {
             "payment_type_id": 9,
             "customer": 7,
-            "service_date": "2022-01-25",
+            "created_on": "2022-01-25",
             "completed_on": "2022-03-26"
         }
     },
@@ -84,7 +84,7 @@
         "pk": 10,
         "fields": {
             "customer": 8,
-            "service_date": "2022-01-25"
+            "created_on": "2022-01-25"
         }
     },
     {
@@ -92,7 +92,7 @@
         "pk": 11,
         "fields": {
             "customer": 9,
-            "service_date": "2022-01-25"
+            "created_on": "2022-01-25"
         }
     }
 ]

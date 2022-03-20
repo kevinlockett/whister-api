@@ -6,9 +6,9 @@ class InvoiceSerializer(serializers.ModelSerializer):
     payment_type = PaymentTypeSerializer()
     class Meta:
         model = Invoice
-        fields = ('id', 'customer', 'services', 'service_date',
+        fields = ('id', 'customer', 'services', 'created_on',
                   'completed_on', 'total', 'payment_type')
-        depth = 1
+        depth = 2
 
 class PayInvoiceSerializer(serializers.ModelSerializer):
     payment_type = serializers.IntegerField()

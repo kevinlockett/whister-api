@@ -8,8 +8,7 @@
             "city": "Nashville",
             "state": 43,
             "zipcode": "37201",
-            "phone": "(615)469-4194",
-            "is_active": "True"
+            "phone": "(615) 469-4194"
         }
     },
     {
@@ -21,8 +20,7 @@
             "city": "Nashville",
             "state": 43,
             "zipcode": "37212",
-            "phone": "(615)936-9635",
-            "is_active": "True"
+            "phone": "(615) 936-9635"
         }
     },
     {
@@ -34,8 +32,7 @@
             "city": "Nashville",
             "state": 43,
             "zipcode": "37201",
-            "phone": "(615)908-0772",
-            "is_active": "True"
+            "phone": "(615) 908-0772"
         }
     },
     {
@@ -47,8 +44,7 @@
             "city": "Franklin",
             "state": 43,
             "zipcode": "37067",
-            "phone": "(615)778-7036",
-            "is_active": "True"
+            "phone": "(615) 778-7036"
         }
     }
 ]

@@ -10,4 +10,5 @@ from .service_invoice import ServiceInvoice
 from .service_type import ServiceType
 from .service import Service
 from .shop import Shop
+from .skill_level import SkillLevel
 from .state import State

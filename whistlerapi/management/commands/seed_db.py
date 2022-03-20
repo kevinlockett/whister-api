@@ -50,5 +50,7 @@ class Command(BaseCommand):
                 state_id=43,
                 zipcode="37143",
                 phone=self.faker.numerify('(###) ###-####'),
-                shop_id=random.randint(1,4)
+                shop_id=random.randint(1,4),
+                skill_level_id=random.randint(1,4),
+                music_style_id=random.randint(1,4)
             )

@@ -5,8 +5,8 @@ class Invoice(models.Model):
         "AppUser", on_delete=models.CASCADE, related_name='invoices')
     services = models.ManyToManyField(
         "Service", through="ServiceInvoice", related_name='invoices')
-    service_date = models.DateTimeField(auto_now_add=True)
     completed_on = models.DateTimeField(null=True, blank=True)
+    created_on = models.DateTimeField(auto_now_add=True)
     payment_type = models.ForeignKey(
         "PaymentType", on_delete=models.CASCADE, null=True, blank=True)
 
