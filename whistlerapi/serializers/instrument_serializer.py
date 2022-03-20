@@ -5,5 +5,5 @@ class InstrumentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Instrument
-        fields = ('id', 'family_id', 'name', 'family')
+        fields = ('id', 'name', 'family')
         depth = 1

@@ -3,42 +3,24 @@
         "model": "whistlerapi.servicetype",
         "pk": 1,
         "fields": {
-            "service": "Lesson"
+            "service": "Lesson",
+            "cost": 45
         }
     },
     {
         "model": "whistlerapi.servicetype",
         "pk": 2,
         "fields": {
-            "service": "Repair"
+            "service": "Repair",
+            "cost": 60
         }
     },
     {
         "model": "whistlerapi.servicetype",
         "pk": 3,
         "fields": {
-            "service": "Tuning"
-        }
-    },
-    {
-        "model": "whistlerapi.servicetype",
-        "pk": 4,
-        "fields": {
-            "service": "Rental"
-        }
-    },
-    {
-        "model": "whistlerapi.servicetype",
-        "pk": 5,
-        "fields": {
-            "service": "Consignment"
-        }
-    },
-    {
-        "model": "whistlerapi.servicetype",
-        "pk": 6,
-        "fields": {
-            "service": "Retail"
+            "service": "Tuning",
+            "cost": 25
         }
     }
 ]

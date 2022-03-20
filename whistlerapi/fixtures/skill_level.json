@@ -1,0 +1,30 @@
+[
+    {
+        "model": "whistlerapi.skilllevel",
+        "pk": 1,
+        "fields": {
+            "level": "beginner"
+        }
+    },
+    {
+        "model": "whistlerapi.skilllevel",
+        "pk": 2,
+        "fields": {
+            "level": "intermediate"
+        }
+    },
+    {
+        "model": "whistlerapi.skilllevel",
+        "pk": 3,
+        "fields": {
+            "level": "advanced"
+        }
+    },
+    {
+        "model": "whistlerapi.skilllevel",
+        "pk": 4,
+        "fields": {
+            "level": "master"
+        }
+    }
+]

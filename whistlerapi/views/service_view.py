@@ -32,7 +32,7 @@ class ServiceView(ViewSet):
                 description=request.data['description'],
                 price=request.data['price'],
                 instrument_id=request.data['instrument_id'],
-                musicstyle_id=request.data['musicstyle_id']
+                service_date=request.data['service_date']
             )
             serializer = ServiceSerializer(service)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -73,10 +73,10 @@ class ServiceView(ViewSet):
         shop = request.query_params.get('shop', None)
 
         if service_type is not None:
-            services = services.filter(servicetype_id=service_type)
+            services = services.filter(service_type_id=service_type)
 
         if shop is not None:
-            services = services.filter(shop_contains=shop)
+            services = services.filter(shop_id=shop)
 
         serializer = ServiceSerializer(services, many=True)
         return Response(serializer.data)

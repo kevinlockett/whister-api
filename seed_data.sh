@@ -18,6 +18,8 @@ echo "LOAD SERVICE_TYPE DATA COMPLETE"
 echo "LOAD STATE DATA COMPLETE"
 ./manage.py loaddata shop
 echo "LOAD SHOP DATA COMPLETE"
+./manage.py loaddata skill_level
+echo "LOAD SKILL_LEVEL DATA COMPLETE"
 ./manage.py seed_db
 echo "LOAD SEED_DB | AUTH_USER & APP_USER COMPLETE"
 ./manage.py loaddata payment_type

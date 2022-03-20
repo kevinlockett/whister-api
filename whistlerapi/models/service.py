@@ -4,11 +4,11 @@ class Service(models.Model):
     description = models.CharField(max_length=250)
     instrument = models.ForeignKey(
         'Instrument', on_delete=models.CASCADE)
-    musicstyle = models.ForeignKey(
-        'MusicStyle', on_delete=models.CASCADE, null=True, blank=True)
     price = models.FloatField(validators=[
-        MinValueValidator(0.00), MaxValueValidator(17500.00)])
-    servicetype = models.ForeignKey(
+        MinValueValidator(50.00), MaxValueValidator(200.00)])
+    service_date = models.DateTimeField()
+    service_type = models.ForeignKey(
         'ServiceType', on_delete=models.CASCADE, related_name='services')
     shop = models.ForeignKey(
         'Shop', on_delete=models.CASCADE, related_name='services')
+    

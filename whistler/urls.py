@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path, re_path
-from rest_framework.routers import DefaultRouter
+from django.conf import settings
+from django.conf.urls.static import static
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from whistlerapi import views
-from whistlerapi.views.app_user_view import AppUserView
+
 
 SchemaView = get_schema_view(
     openapi.Info(
@@ -32,26 +33,13 @@ SchemaView = get_schema_view(
     permission_classes=[permissions.AllowAny],
 )
 
-router = DefaultRouter(trailing_slash=False)
-router.register(r'appusers', views.AppUserView, 'app_user')
-router.register(r'instruments', views.InstrumentView, 'instrument')
-router.register(r'instrumentfamilies', views.InstrumentFamilyView, 'instrument_family')
-router.register(r'invoices', views.InvoiceView, 'invoice')
-router.register(r'musicstyles', views.MusicStyleView, 'music_style')
-router.register(r'roles', views.RoleView, 'role')
-router.register(r'paymenttypes', views.PaymentTypeView, 'payment_type')
-router.register(r'services', views.ServiceView, 'service')
-router.register(r'shops', views.ShopView, 'shop')
-router.register(r'states', views.StateView, 'state')
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login', views.login_user),
-    path('register',views.register_user),
-    path('', include(router.urls)),
-    path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
+    path('register', views.register_user),
+    path('api/', include('whistlerapi.urls')),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$',
         SchemaView.without_ui(cache_timeout=None), name='schema-json'),
     re_path(r'^swagger/$', SchemaView.with_ui('swagger',
         cache_timeout=None), name='schema-swagger-ui'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
