@@ -52,5 +52,7 @@ class Command(BaseCommand):
                 phone=self.faker.numerify('(###) ###-####'),
                 shop_id=random.randint(1,4),
                 skill_level_id=random.randint(1,4),
-                music_style_id=random.randint(1,4)
+                music_style_id=random.randint(1,4),
+                instrument_id="",
+                approved=False
             )

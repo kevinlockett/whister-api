@@ -8,8 +8,8 @@ class AppUserSerializer(serializers.ModelSerializer):
         fields = ('id', 'username', 'full_name', 'first_name', 'last_name',
                   'address', 'city', 'state_id', 'state', 'zipcode', 'phone',
                   'email', 'bio', 'image', 'role_id', 'role', 'shop_id',
-                  'shop', 'music_style_id', 'skill_level_id')
-        depth = 1
+                  'shop', 'music_style_id', 'skill_level_id', 'instrument_id', 'instrument')
+        depth = 2
 
 class CreateAppUserSerializer(serializers.Serializer):
     username = serializers.CharField()
@@ -28,3 +28,5 @@ class CreateAppUserSerializer(serializers.Serializer):
     shop_id = serializers.IntegerField()
     music_style_id = serializers.IntegerField()
     skill_level_id = serializers.IntegerField()
+    instrument_id = serializers.IntegerField()
+    

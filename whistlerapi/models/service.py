@@ -2,8 +2,6 @@ from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 class Service(models.Model):
     description = models.CharField(max_length=250)
-    instrument = models.ForeignKey(
-        'Instrument', on_delete=models.CASCADE)
     price = models.FloatField(validators=[
         MinValueValidator(50.00), MaxValueValidator(200.00)])
     service_date = models.DateTimeField()

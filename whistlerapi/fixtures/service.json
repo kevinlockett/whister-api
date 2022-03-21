@@ -7,7 +7,6 @@
             "service_type_id": 1,
             "description": "60 minute in-studio violin lesson.",
             "price": 60.00,
-            "instrument_id": 1,
             "service_date": "2022-03-04"
         }
     },
@@ -19,7 +18,6 @@
             "service_type_id": 1,
             "description": "60 minute in-studio trumpet lesson.",
             "price": 55.00,
-            "instrument_id": 7,
             "service_date": "2022-03-04"
         }
     },
@@ -31,7 +29,6 @@
             "service_type_id": 1,
             "description": "60 minute in-studio trombone lesson.",
             "price": 55.00,
-            "instrument_id": 10,
             "service_date": "2022-03-04"
         }
     },
@@ -43,7 +40,6 @@
             "service_type_id": 1,
             "description": "60 minute in-studio acoustic guitar lesson.",
             "price": 45.00,
-            "instrument_id": 12,
             "service_date": "2022-03-04"
         }
     },
@@ -55,7 +51,6 @@
             "service_type_id": 1,
             "description": "30 minute in-studio bass guitar lesson.",
             "price": 45.00,
-            "instrument_id": 13,
             "service_date": "2022-03-04"
         }
     },
@@ -67,7 +62,6 @@
             "service_type_id": 1,
             "description": "30 minute in-studio classic guitar lesson.",
             "price": 45.00,
-            "instrument_id": 14,
             "service_date": "2022-03-04"
         }
     },
@@ -79,7 +73,6 @@
             "service_type_id": 1,
             "description": "60 minute in-studio banjo lesson.",
             "price": 75.00,
-            "instrument_id": 18,
             "service_date": "2022-03-04"
         }
     },
@@ -91,7 +84,6 @@
             "service_type_id": 1,
             "description": "60 minute in-studio piano lesson.",
             "price": 45.00,
-            "instrument_id": 2,
             "service_date": "2022-03-04"
         }
     },
@@ -103,7 +95,6 @@
             "service_type_id": 1,
             "description": "60 minute in-studio piano lesson.",
             "price": 45.00,
-            "instrument_id": 2,
             "service_date": "2022-03-04"
         }
     },
@@ -115,7 +106,6 @@
             "service_type_id": 1,
             "description": "60 minute in-studio piano lesson.",
             "price": 45.00,
-            "instrument_id": 2,
             "service_date": "2022-03-04"
         }
     },
@@ -127,7 +117,6 @@
             "service_type_id": 1,
             "description": "60 minute in-studio drum lesson.",
             "price": 55.00,
-            "instrument_id": 26,
             "service_date": "2022-03-04"
         }
     },
@@ -139,7 +128,6 @@
             "service_type_id": 1,
             "description": "60 minute in-studio mandolin lesson.",
             "price": 65.00,
-            "instrument_id": 19,
             "service_date": "2022-03-04"
         }
     }
