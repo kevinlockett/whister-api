@@ -22,6 +22,9 @@ class AppUser(models.Model):
         'SkillLevel', related_name="shop", on_delete=models.CASCADE, null = True)
     music_style = models.ForeignKey(
         'MusicStyle', related_name="role", on_delete=models.CASCADE, null = True)
+    instrument = models.ForeignKey(
+        'Instrument', on_delete=models.CASCADE, null=True)
+    approved = models.BooleanField(default=False)
 
     def __str__(self):
         return self.full_name

@@ -83,10 +83,6 @@ class AppUserView(ViewSet):
         """Update an Application User"""
         appuser = AppUser.objects.get(pk=pk)
         data = request.data['image']
-        if data != "":
-            format, imgstr = request.data["image"].split(';base64,')
-            ext = format.split('/')[-1]
-            data = ContentFile(base64.b64decode(imgstr), name=f'{appuser.id}-{uuid.uuid4()}.{ext}')
 
         try:
             appuser.authuser.username = request.data['username']
@@ -99,11 +95,17 @@ class AppUserView(ViewSet):
             appuser.phone = request.data['phone']
             appuser.authuser.email = request.data['email']
             appuser.bio = request.data['bio']
-            appuser.image = data
+            if '/media/instructors/' not in data and data != "":
+                format, imgstr = request.data["image"].split(';base64,')
+                ext = format.split('/')[-1]
+                data = ContentFile(base64.b64decode(imgstr), name=f'{appuser.id}-{uuid.uuid4()}.{ext}')
+                appuser.image = data
             appuser.role_id = request.data['role_id']
             appuser.shop_id = request.data['shop_id']
             appuser.music_style_id = request.data['music_style_id']
             appuser.skill_level_id = request.data['skill_level_id']
+            appuser.instrument_id = request.data['instrument_id']
+            appuser.approved = request.data['approved']
             appuser.save()
             appuser.authuser.save()
             return Response(None, status=status.HTTP_204_NO_CONTENT)

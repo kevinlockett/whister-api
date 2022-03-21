@@ -127,7 +127,6 @@ class ServiceView(ViewSet):
             service.servicetype_id=request.data['servicetype_id']
             service.description=request.data['description']
             service.price=request.data['price']
-            service.instrument_id=request.data['instrument_id']
             service.musicstyle_id=request.data['musicstyle_id']
             service.save()
             return Response(None, status=status.HTTP_204_NO_CONTENT)
