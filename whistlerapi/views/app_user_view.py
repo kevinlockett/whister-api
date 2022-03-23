@@ -21,24 +21,68 @@ class AppUserView(ViewSet):
         },
         manual_parameters=[
             openapi.Parameter(
+                'approved',
+                openapi.IN_QUERY,
+                required=False,
+                type=openapi.TYPE_INTEGER,
+                description="Get approved users"
+            ),
+            openapi.Parameter(
+                'instrument',
+                openapi.IN_QUERY,
+                required=False,
+                type=openapi.TYPE_INTEGER,
+                description="Get users by instrument"
+            ),
+            openapi.Parameter(
                 'role',
                 openapi.IN_QUERY,
                 required=False,
                 type=openapi.TYPE_INTEGER,
                 description="Get users by role"
-            )
+            ),
+            openapi.Parameter(
+                'level',
+                openapi.IN_QUERY,
+                required=False,
+                type=openapi.TYPE_INTEGER,
+                description="Get users by skill_level"
+            ),
+            openapi.Parameter(
+                'style',
+                openapi.IN_QUERY,
+                required=False,
+                type=openapi.TYPE_INTEGER,
+                description="Get users by music style"
+            ),
         ]
     )
     def list(self, request):
         """Get a list of Application Users
         """
         appusers = AppUser.objects.all()
-        
+
+        approved = request.query_params.get('approved', None)
+        instrument = request.query_params.get('instrument', None)
+        level = request.query_params.get('level', None)
         role = request.query_params.get('role', None)
+        style = request.query_params.get('style', None)
+
+        if approved is not None:
+            appusers = appusers.filter(approved=approved)
+
+        if instrument is not None:
+            appusers = appusers.filter(instrument_id=instrument)
 
         if role is not None:
             appusers = appusers.filter(role_id=role)
-            
+
+        if level is not None:
+            appusers = appusers.filter(skill_level_id=level)
+
+        if style is not None:
+            appusers = appusers.filter(music_style_id=style)
+
         serializer = AppUserSerializer(appusers, many=True)
         return Response(serializer.data)
 

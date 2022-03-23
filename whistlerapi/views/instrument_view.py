@@ -14,12 +14,27 @@ class InstrumentView(ViewSet):
                 description="The list of Instruments",
                 schema=InstrumentSerializer(many=True)
             ),
-        }
+        },
+        manual_parameters=[
+            openapi.Parameter(
+                'family_id',
+                openapi.IN_QUERY,
+                required=False,
+                type=openapi.TYPE_INTEGER,
+                description="Get instruments by music family"
+            )
+        ]
     )
     def list(self, request):
         """Get a list of Instruments
         """
         instruments = Instrument.objects.all()
+        
+        family = request.query_params.get('family_id', None)
+        
+        if family is not None:
+            instruments = instruments.filter(family_id=family)
+        
         serializer = InstrumentSerializer(instruments, many=True)
         return Response(serializer.data)
 
