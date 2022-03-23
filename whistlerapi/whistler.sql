@@ -1,5 +1,5 @@
 DELETE FROM auth_user
-WHERE id > 30;
+WHERE id = 42;
 
 DELETE FROM whistlerapi_appuser
-WHERE id > 30;
+WHERE id = 42;
