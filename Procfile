@@ -1,1 +1,1 @@
-web: gunicorn whistler-api.wsgi --log-file -
+web: gunicorn whistler-server.wsgi --log-file -
