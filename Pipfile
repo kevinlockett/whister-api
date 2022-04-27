@@ -11,6 +11,8 @@ djangorestframework = "*"
 django-cors-headers = "*"
 pylint-django = "*"
 faker-commerce = "*"
+gunicorn = "*"
+django-on-heroku = "*"
 
 [dev-packages]
 
