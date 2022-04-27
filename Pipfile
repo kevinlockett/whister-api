@@ -13,6 +13,7 @@ pylint-django = "*"
 faker-commerce = "*"
 gunicorn = "*"
 django-on-heroku = "*"
+drf-yasg = "*"
 
 [dev-packages]
 
