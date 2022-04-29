@@ -1,5 +1,5 @@
 from django.db import models
 
 class Merchant(models.Model):
-    name = models.CharField(max_length=25)
+    name = models.CharField(max_length=50)
     
