@@ -1,7 +1,7 @@
 from django.db import models
 
 class Role(models.Model):
-    name = models.CharField(max_length=505)
+    name = models.CharField(max_length=50)
 
     class Meta:
         verbose_name_plural = 'roles'
