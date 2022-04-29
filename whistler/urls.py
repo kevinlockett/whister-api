@@ -38,6 +38,7 @@ urlpatterns = [
     path('login', views.login_user),
     path('register', views.register_user),
     path('api/', include('whistlerapi.urls')),
+    path('', include('whistlerapi.urls')),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$',
         SchemaView.without_ui(cache_timeout=None), name='schema-json'),
     re_path(r'^swagger/$', SchemaView.with_ui('swagger',
