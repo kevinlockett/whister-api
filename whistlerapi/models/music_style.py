@@ -1,7 +1,7 @@
 from django.db import models
 
 class MusicStyle(models.Model):
-    style = models.CharField(max_length=50)
+    style = models.CharField(max_length=25)
     class Meta:
         verbose_name_plural = 'MusicStyles'
 
