@@ -8,6 +8,8 @@ from whistlerapi.serializers import RoleSerializer, MessageSerializer
 
 class RoleView(ViewSet):
 
+# swagger_auto_schema is a decorator that generates
+# html documentation on (localhost:8000/swagger)
     @swagger_auto_schema(
         responses={
             200: openapi.Response(

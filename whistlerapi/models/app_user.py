@@ -73,3 +73,4 @@ class AppUser(models.Model):
             string: Email of associated user object
         """
         return self.authuser.email
+

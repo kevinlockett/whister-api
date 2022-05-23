@@ -12,6 +12,8 @@ from whistlerapi.serializers import AppUserSerializer, MessageSerializer, Create
 
 class AppUserView(ViewSet):
 
+#swagger_auto_schema is a decorator that generates html documentation on (localhost:8000/swagger)
+
     @swagger_auto_schema(
         responses={
             200: openapi.Response(
@@ -140,9 +142,10 @@ class AppUserView(ViewSet):
             appuser.authuser.email = request.data['email']
             appuser.bio = request.data['bio']
             if '/media/instructors/' not in data and data != "":
-                format, imgstr = request.data["image"].split(';base64,')
-                ext = format.split('/')[-1]
-                data = ContentFile(base64.b64decode(imgstr), name=f'{appuser.id}-{uuid.uuid4()}.{ext}')
+                frmt, imgstr = request.data["image"].split(';base64,')
+                ext = frmt.split('/')[-1]
+                data = ContentFile(base64.b64decode(imgstr),
+                                   name=f'{appuser.id}-{uuid.uuid4()}.{ext}')
                 appuser.image = data
             appuser.role_id = request.data['role_id']
             appuser.shop_id = request.data['shop_id']

@@ -17,8 +17,8 @@ router.register(r'states', views.StateView, 'state')
 
 urlpatterns = [
     path('', include(router.urls)),
-#    path('login', views.login_user),
-#    path('login', auth_token_views.obtain_auth_token),
-#    path('register', views.register_user),
+    # path('login', views.login_user),
+    # path('login', auth_token_views.obtain_auth_token),
+    # path('register', views.register_user),
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
 ]

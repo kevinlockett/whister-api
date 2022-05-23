@@ -7,7 +7,7 @@ from whistlerapi.models import InstrumentFamily
 from whistlerapi.serializers import InstrumentFamilySerializer, MessageSerializer
 
 class InstrumentFamilyView(ViewSet):
-
+# swagger_auto_schema is a decorator that generates html documentation on (localhost:8000/swagger)
     @swagger_auto_schema(
         responses={
             200: openapi.Response(
