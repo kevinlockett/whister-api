@@ -42,6 +42,8 @@ def login_user(request):
         data = { 'valid': False }
         return Response(data)
 
+#swagger_auto_schema is a decorator that generates html documentation on (localhost:8000/swagger)
+
 @swagger_auto_schema(
     method='POST',
     request_body=CreateAppUserSerializer,

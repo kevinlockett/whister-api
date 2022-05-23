@@ -14,13 +14,21 @@
         }
     ],
     "cSpell.words": [
+        "appuser",
+        "appusers",
+        "authtoken",
+        "authuser",
         "imgstr",
+        "instrumentfamilies",
         "instrumentfamily",
         "musicstyle",
+        "musicstyles",
         "numerify",
         "paymenttype",
+        "paymenttypes",
         "serviceinvoice",
         "servicetype",
+        "viewsets",
         "whistlerapi",
         "yasg",
         "zipcode"

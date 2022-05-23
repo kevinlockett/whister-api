@@ -30,4 +30,3 @@ class CreateAppUserSerializer(serializers.Serializer):
     music_style_id = serializers.IntegerField()
     skill_level_id = serializers.IntegerField()
     instrument_id = serializers.IntegerField()
-    

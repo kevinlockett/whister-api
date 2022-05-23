@@ -10,6 +10,8 @@ from whistlerapi.serializers import CreateServiceSerializer,ServiceSerializer, M
 
 class ServiceView(ViewSet):
 
+# swagger_auto_schema is a decorator that generates
+# html documentation on (localhost:8000/swagger)
     @swagger_auto_schema(
         request_body=CreateServiceSerializer,
         responses={

@@ -8,6 +8,8 @@ from whistlerapi.serializers import InstrumentSerializer, MessageSerializer
 
 class InstrumentView(ViewSet):
 
+#swagger_auto_schema is a decorator that generates html
+# documentation on (localhost:8000/swagger)
     @swagger_auto_schema(
         responses={
             200: openapi.Response(
@@ -29,12 +31,12 @@ class InstrumentView(ViewSet):
         """Get a list of Instruments
         """
         instruments = Instrument.objects.all()
-        
+
         family = request.query_params.get('family_id', None)
-        
+
         if family is not None:
             instruments = instruments.filter(family_id=family)
-        
+
         serializer = InstrumentSerializer(instruments, many=True)
         return Response(serializer.data)
 

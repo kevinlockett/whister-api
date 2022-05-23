@@ -35,8 +35,8 @@ SchemaView = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login', views.login_user),
-    path('register', views.register_user),
+     path('login', views.login_user),
+     path('register', views.register_user),
     path('api/', include('whistlerapi.urls')),
     path('', include('whistlerapi.urls')),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$',
