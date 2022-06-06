@@ -35,12 +35,13 @@ SchemaView = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-     path('login', views.login_user),
-     path('register', views.register_user),
+    path('login', views.login_user),
+    path('register', views.register_user),
     path('api/', include('whistlerapi.urls')),
     path('', include('whistlerapi.urls')),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$',
         SchemaView.without_ui(cache_timeout=None), name='schema-json'),
     re_path(r'^swagger/$', SchemaView.with_ui('swagger',
         cache_timeout=None), name='schema-swagger-ui'),
+    path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
